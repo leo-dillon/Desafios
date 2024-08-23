@@ -1,0 +1,355 @@
+:root{
+    --white--100: rgb(217, 217, 217, 100%);
+    --white--90: rgb(217, 217, 217, 90%);
+    --white--50: rgb(217, 217, 217, 50%);
+
+    --dark--100: rgb(9, 9, 9, 100%);
+    --dark--90: rgb(9, 9, 9, 90%);
+    --dark--80: rgb(9, 9, 9, 80%);
+    --dark--70: rgb(9, 9, 9, 70%);
+    --dark--50: rgb(9, 9, 9, 50%);
+    --dark--30: rgb(9, 9, 9, 30%);
+    --dark--10: rgb(9, 9, 9, 10%);
+    --dark--5: rgb(9, 9, 9, 5%);
+
+    --bronw--100: rgb(226, 147, 91, 100%);
+    --bronw--40: rgb(226, 147, 91, 40%);
+    --bronw--20: rgb(226, 147, 91, 20%);
+
+    --blue--100: rgb(43, 57, 255, 100%);
+    --blue--40: rgb(43, 57, 255, 40%);
+    --blue--20: rgb(43, 57, 255, 20%);
+    --blue--10: rgb(43, 57, 255, 10%);
+    --blue--5: rgb(43, 57, 255, 5%);
+
+    --green--100: rgb(0, 128, 0, 100%);
+}
+*{
+    color: var(--dark--100);
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto';
+}
+body{
+    background-color: var(--dark--80);
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+p.m{
+    font-size: .9rem;
+}
+
+
+
+
+header{
+    padding: 24px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white--100);
+}
+header picture img{
+    width: 64px;
+}
+header ul{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+header ul li a{
+    display: block;
+    position: relative;
+    padding: 4px 12px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: .6;    
+    transform: translateY(0px);
+    transition: transform .2s ease-out, opacity .3s ease-out;
+}
+header ul li a:hover{
+    transform: translateY(4px);
+    opacity: 1;
+}
+main{
+}
+main section.presentacion{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 160px;
+    margin: 0 auto;
+    gap: 100px;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    background-color: var(--white--100);
+    box-shadow: inset 4px 0px 24px var(--dark--30);
+}
+
+main section.presentacion div.presentacion__texto h1 span{
+    padding:  0 12px;
+    font-size: 4rem;
+    background-color: var(--blue--20);
+}
+
+main section.presentacion picture{
+    display: flex;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: var(--bronw--40);
+    overflow: hidden;
+}
+main section.presentacion picture img{
+    mask-image: linear-gradient( black 90%, transparent);
+    filter: drop-shadow(12px 8px var(--dark--30));
+}
+main section.desafios{
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main section.desafios *{
+    color: var(--white--100);
+}
+main section.desafios div{
+    position: relative;
+    margin-bottom: 64px;
+}
+main section.desafios div.lista ul{
+    width: 96%;
+    margin: 42px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    
+}
+main section.desafios div.lista ul li.card{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    max-width: 360px;
+    padding-bottom: 6px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--white--100);
+}
+main section.desafios div.lista ul li.card:hover{
+    box-shadow: 6px 6px 24px var(--white--50);
+
+}
+main section.desafios div.lista ul li.card *{
+    color: var(--dark--100);
+}
+main section.desafios div.lista ul li.card>picture{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    min-height: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+main section.desafios div.lista ul li.card>picture img{
+    width: 100%;
+    transform-origin: center left;
+    transition: scale .2s ease-out;
+}
+main section.desafios div.lista ul li.card:hover>picture img{
+    scale: 1.2;
+}
+main section.desafios div.lista ul li.card div.info{
+    justify-self: flex-start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 4px auto;
+}
+main section.desafios div.lista ul li.card div.info h3{
+    margin: 6px 0;
+}
+main section.desafios div.lista ul li.card div.info p.truncado{
+    max-width: 400px;
+    min-height: 90px;
+    margin: 6px 0 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: pretty;
+    white-space: normal;
+}
+main section.desafios div.lista ul li.card picture div.dificultad{
+    padding: 4px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--dark--100);
+    border-bottom-left-radius: 12px;
+}
+main section.desafios div.lista ul li.card picture div.dificultad p{
+    color: #439C6B;
+    font-weight: bold;  
+}
+main section.desafios div.lista ul li.card div.info button,
+main section.desafios div.lista ul li.card div.info a{
+    background-color: var(--blue--5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 0;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .1s ease-out;
+
+}
+main section.desafios div.lista ul li.card div.info button{
+    border: 2px solid var(--blue--100);
+}
+main section.desafios div.lista ul li.card div.info button:hover,
+main section.desafios div.lista ul li.card div.info a:hover{
+    background-color: var(--blue--10);
+}
+main section.desafios div.lista ul li.card div.info a picture{
+    width: 18px;
+    height: 18px;
+}
+main section.desafios div.lista ul li.card div.info a picture img{
+    width: 100%;
+}
+/* Ver el desafio resuelto */
+main section.desafioExpandido{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark--90);
+    z-index: 10;
+}
+main section.desafioExpandido>div{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 90vh;
+    padding: 0 42px 42px;
+    border-radius: 42px;
+    box-shadow: 0px 1px 32px var(--dark--100);
+    background-color: var(--white--100);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark--80) transparent;   
+}
+main section.desafioExpandido>div h2{
+    padding-bottom: 12px;
+    margin: 24px 0 12px;
+    border-bottom: 1px solid var(--dark--100);
+}
+main section.desafioExpandido>div h2::first-letter{
+    color: var(--dark--70);
+}
+main section.desafioExpandido>div h2 span{
+    background-color: var(--dark--100);
+    border-radius: 12px;
+    padding: 4px 12px;
+    color: #439C6B;
+}
+main section.desafioExpandido>div div{
+    width: 80%;
+    padding: 12px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+main section.desafioExpandido>div div.desafioExpandido__enunciado p.ejemplo{
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--dark--100);
+}
+main section.desafioExpandido>div div.desafioExpandido__ejemplo{
+    margin-bottom: 12px;
+    margin-left: 12px;
+    background-color: var(--dark--10);
+    border: 2px solid var(--blue--20);
+    border-radius: 12px;
+}
+main section.desafioExpandido>div div .subTitulo{
+    color: var(--dark--100);
+    font-weight: 900;
+    padding: 6px 0;
+    font-size: 1.1rem;
+}
+main section.desafioExpandido>div div p.enunciado{
+    padding-left: 12px;
+    color: var(--dark--80);
+    font-weight: 900;
+    font-size: 1.05rem;
+}
+main section.desafioExpandido>div div p.ejemplo{
+    display: block;
+    color: var(--dark--80);
+    padding-left: 12px;
+}
+main section.desafioExpandido>div div p.ejemplo:nth-child(2){
+    margin: 0;
+}
+main section.desafioExpandido>div div p span.destacar{
+    padding: 2px 4px;
+    border-radius: 6px;
+    font-weight: 500;
+    background-color: var(--bronw--40);
+}
+main section.desafioExpandido>div button.cerrarModal{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+}
+footer{
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
