@@ -320,4 +320,3 @@ function crearButton(clase, texto, funcion, iconoClase, iconoUrl, iconoTexto){
 function removerElemento(elemento){
     elemento.remove()
 }
-

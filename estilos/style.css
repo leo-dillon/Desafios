@@ -34,6 +34,7 @@
 }
 body{
     background-color: var(--dark--80);
+    scroll-behavior: smooth;
 }
 
 /*

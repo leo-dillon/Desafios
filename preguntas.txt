@@ -15,7 +15,15 @@ Puede haber un titulo y disitintos parrafos.
 [[
     IDEA
     Generar caracteres para dividir el texto a travez de un split   
-
+    EJ
+{
+    title: 'Inicializamos las variables',
+    descripcion: [
+        '<p>La función <strong> tiene 2 argumentos nums </strong> ** (Array de numeros) (/strong) y target (Número que representa la suma objetivo). (br) El objetivo de la función es encontrar dos índices en el arreglo nums cuyos valores sumen exactamente target.'
+    ]
+}
+ INVESTIGAR - https://vuepress.vuejs.org/guide/markdown.html#table-of-contents
+            - MARKDOWM --> https://github.com/markedjs/marked
 ]]
 
 -----------------------
