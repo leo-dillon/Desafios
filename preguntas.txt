@@ -24,6 +24,7 @@ Puede haber un titulo y disitintos parrafos.
 }
  INVESTIGAR - https://vuepress.vuejs.org/guide/markdown.html#table-of-contents
             - MARKDOWM --> https://github.com/markedjs/marked
+            - REGEX - Expresiones regulares -
 ]]
 
 -----------------------
