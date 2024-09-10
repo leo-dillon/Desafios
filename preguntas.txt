@@ -1,0 +1,21 @@
+-----------------------
+¿ Como puedo realizar los textos de forma más prolija ?
+1) 
+tenemos un titulo que se imprime primero y debajo parrafos en forma de texto
+{
+    title: 'Inicializamos las variables',
+    descripcion: [
+        'La función tiene 2 argumentos nums (Array de numeros) y target (Número que representa la suma objetivo).',
+        'El objetivo de la función es encontrar dos índices en el arreglo nums cuyos valores sumen exactamente target.'
+    ]
+}
+Puede haber un titulo y disitintos parrafos.
+¿ como puedo hacer para agregar adornos al texto ( como si fueran un span ) ?
+
+[[
+    IDEA
+    Generar caracteres para dividir el texto a travez de un split   
+
+]]
+
+-----------------------

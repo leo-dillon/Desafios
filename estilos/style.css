@@ -25,7 +25,6 @@
     --green--100: rgb(0, 128, 0, 100%);
 }
 *{
-    color: var(--dark--100);
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -36,6 +35,10 @@
 body{
     background-color: var(--dark--80);
 }
+
+/*
+    textos
+*/
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -60,9 +63,54 @@ p.m{
     font-size: .9rem;
 }
 
+/* 
+    Contenedores 
+*/
+.tituloTextoFondo{
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    padding: 24px 32px;
+    border: 6px solid var(--blue--20);
+    border-radius: 12px;
+    background-color: var(--white--90);
+}
+.tituloTextoFondo *{
+    color: var(--dark--100);
+}
+.tituloTextoFondo h3{
+    width: 90%;
+    margin: 6px auto;
+    position: relative;
+    right: 12px;
+}
+.tituloTextoFondo p.enunciado{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    right: 12px;
+    padding-left: 12px;
+    color: var(--dark--80);
+    font-weight: 900;
+    font-size: 1.05rem;
+}
+.tituloTextoFondo p.ejemplo{
+    width: 85%;
+    margin: 0 auto;
+}
+.tituloTextoFondo p span{
+    padding: 2px 4px;
+    border-radius: 6px;
+    font-weight: 500;
+    background-color: var(--bronw--40);
+}
 
 
 
+/*
+    Generales
+*/
 header{
     padding: 24px 12px;
     display: flex;
@@ -129,6 +177,25 @@ main section.presentacion picture img{
     mask-image: linear-gradient( black 90%, transparent);
     filter: drop-shadow(12px 8px var(--dark--30));
 }
+main section.porque{
+    width: 90%;
+    padding: 64px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main section.porque h2{
+    width: 100%;
+    margin-bottom: 24px;
+    color: var(--white--100);
+
+}
+main section.porque ul{
+    width: 90%;
+    margin: 0 auto;
+}
 main section.desafios{
     width: 90%;
     max-width: 1600px;
@@ -155,6 +222,7 @@ main section.desafios div.lista ul{
     
 }
 main section.desafios div.lista ul li.card{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: max-content;
@@ -213,7 +281,7 @@ main section.desafios div.lista ul li.card div.info p.truncado{
     text-wrap: pretty;
     white-space: normal;
 }
-main section.desafios div.lista ul li.card picture div.dificultad{
+main section.desafios div.lista ul li.card div.dificultad{
     padding: 4px 12px;
     position: absolute;
     top: 0;
@@ -221,7 +289,7 @@ main section.desafios div.lista ul li.card picture div.dificultad{
     background-color: var(--dark--100);
     border-bottom-left-radius: 12px;
 }
-main section.desafios div.lista ul li.card picture div.dificultad p{
+main section.desafios div.lista ul li.card div.dificultad p{
     color: #439C6B;
     font-weight: bold;  
 }
@@ -295,49 +363,29 @@ main section.desafioExpandido>div h2 span{
     color: #439C6B;
 }
 main section.desafioExpandido>div div{
-    width: 80%;
     padding: 12px 32px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+main section.desafioExpandido>div picture{
+    margin: 0 auto;
+}
 main section.desafioExpandido>div div.desafioExpandido__enunciado p.ejemplo{
     font-weight: 500;
     line-height: 2rem;
     color: var(--dark--100);
-}
-main section.desafioExpandido>div div.desafioExpandido__ejemplo{
-    margin-bottom: 12px;
-    margin-left: 12px;
-    background-color: var(--dark--10);
-    border: 2px solid var(--blue--20);
-    border-radius: 12px;
-}
+}   
 main section.desafioExpandido>div div .subTitulo{
     color: var(--dark--100);
     font-weight: 900;
     padding: 6px 0;
     font-size: 1.1rem;
 }
-main section.desafioExpandido>div div p.enunciado{
-    padding-left: 12px;
-    color: var(--dark--80);
-    font-weight: 900;
-    font-size: 1.05rem;
-}
 main section.desafioExpandido>div div p.ejemplo{
     display: block;
     color: var(--dark--80);
     padding-left: 12px;
-}
-main section.desafioExpandido>div div p.ejemplo:nth-child(2){
-    margin: 0;
-}
-main section.desafioExpandido>div div p span.destacar{
-    padding: 2px 4px;
-    border-radius: 6px;
-    font-weight: 500;
-    background-color: var(--bronw--40);
 }
 main section.desafioExpandido>div button.cerrarModal{
     position: absolute;
@@ -352,4 +400,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+footer p{
+    color: var(--white--100);
+
 }
