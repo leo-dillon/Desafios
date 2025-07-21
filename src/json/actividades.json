@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "nombre": "Two Sun",
+        "link": "?act=1",
+        "dificultad": "facil"
+    },
+    {
+        "id": 2,
+        "nombre": "Palindrome Number",
+        "link": "?act=2",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 3,
+        "nombre": "Roman to Integer",
+        "link": "?act=3",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 4,
+        "nombre": "Longest Common Prefix",
+        "link": "?act=4",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 5,
+        "nombre": "Valid Parentheses",
+        "link": "?act=5",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 6,
+        "nombre": "Merge Two Sorted Lists",
+        "link": "?act=6",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 7,
+        "nombre": "Remove Duplicates from Sorted Array",
+        "link": "?act=7",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 8,
+        "nombre": "Remove Duplicates from Sorted Array",
+        "link": "?act=8",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 9,
+        "nombre": "Find the Index of the First Occurrence in a String",
+        "link": "?act=9",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 10,
+        "nombre": "Search Insert Position",
+        "link": "?act=10",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 11,
+        "nombre": "Length of Last Word",
+        "link": "?act=11",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 12,
+        "nombre": "Plus One",
+        "link": "?act=12",
+        "dificultad": "facil"
+    }
+    ,
+    {
+        "id": 13,
+        "nombre": "Add Binary",
+        "link": "?act=13",
+        "dificultad": "facil"
+    }
+    
+    
+]
