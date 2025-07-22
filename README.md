@@ -7,7 +7,6 @@ Este es un proyecto personal desarrollado con **Vue** y **Vue Router**, cuyo pro
 La Home del sitio contiene:
 - ✍️ Una explicación clara del propósito del proyecto:
   > *"Estoy resolviendo desafíos de programación para mejorar mis habilidades y enfrentar con eficacia los conflictos técnicos del desarrollo web."*
-- 🖼️ Una ilustración estilo anime representando a mi persona.
 - 📋 Una lista de desafíos resueltos, divididos en categorías: **Fácil**, **Medio** y **Difícil**.
 
 Cada desafío contiene:
