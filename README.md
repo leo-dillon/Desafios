@@ -21,8 +21,11 @@
 
 ## ✨ Sobre el proyecto
 
-Estoy resolviendo desafíos de programación para mejorar mis habilidades y enfrentar con eficacia los conflictos técnicos del desarrollo web.
-
+Estoy resolviendo desafíos de programación para mejorar mis habilidades.
+Los desafios que resuelvo están dentro del 
+<a href="https://leetcode.com/problems" title="Ir a LeetCode">
+  LeetCode
+</a>. <br />
 Cada desafío cuenta con un enlace directo a su resolución dentro del sitio.
 
 ---
@@ -39,8 +42,8 @@ Cada desafío cuenta con un enlace directo a su resolución dentro del sitio.
 </p>
 
 ---
-Para poder ver el desafio debes:
-## Installar
+## 📦 Instalación y uso
+Cloná el repositorio y levantá el entorno localmente:
 ```bash
 git clone https://github.com/leo-dillon/Desafios.git
 cd Desafios
