@@ -50,7 +50,7 @@
 </script>
 
 <template>
-    <section class="w-full max-w-9/10 sm:max-w-7/10 mx-auto mt-12 flex flex-col">
+    <section class="w-full max-w-9/10 sm:max-w-300 mx-auto mt-12 flex flex-col">
         <h2 class="w-full text-start text-3xl text-gray-200">
             Desafios - Resueltos
         </h2>

@@ -56,4 +56,3 @@ git clone https://github.com/leo-dillon/Desafios.git
 cd Desafios
 npm install
 npm run dev
-
