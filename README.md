@@ -30,6 +30,11 @@ Cada desafío que completo lo documento dentro de este proyecto, organizándolo 
 
 Mi objetivo con este repositorio es compartir mi forma de resolver los distintos desafíos y dejar registro de los avances que voy logrando.
 
+<img 
+    src="./src/assets/home.png" 
+    alt="Foto de Leonardo Dillon"
+    style="border-radius: 50%; margin-bottom: 10px;"
+  />
 ---
 
 ## 🌐 Redes
