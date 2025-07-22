@@ -1,16 +1,15 @@
-<div align="center">
-  <img alt="Logo Leonardo Dillon" src="./src/assets/whiteLogo.png" width="100px" />
-  <h1>Leonardo Dillon</h1>
+<div align="left"> 
+  <img alt="Logo Leonardo Dillon" src="./src/assets/whiteLogo.png" width=16px" />
+  <strong  style="font-size: 24px;">Leonardo Dillon</strong>
 </div>
-
-<p align="center">
+<div align="center">
   <img 
     src="./src/assets/Leo.png" 
     alt="Foto de Leonardo Dillon"
     width="180"
     style="border-radius: 50%; margin-bottom: 10px;"
   />
-</p>
+</div>
 
 <h2 align="center">Programador Full-Stack</h2>
 
@@ -23,12 +22,6 @@
 ## ✨ Sobre el proyecto
 
 Estoy resolviendo desafíos de programación para mejorar mis habilidades y enfrentar con eficacia los conflictos técnicos del desarrollo web.
-
-Los desafíos están organizados por dificultad:
-
-- 🟢 Fácil
-- 🟡 Medio
-- 🔴 Difícil
 
 Cada desafío cuenta con un enlace directo a su resolución dentro del sitio.
 
@@ -44,3 +37,13 @@ Cada desafío cuenta con un enlace directo a su resolución dentro del sitio.
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Leonardo Dillon" />
   </a>
 </p>
+
+---
+Para poder ver el desafio debes:
+## Installar
+```bash
+git clone https://github.com/leo-dillon/Desafios.git
+cd Desafios
+npm install
+npm run dev
+
