@@ -21,12 +21,14 @@
 
 ## ✨ Sobre el proyecto
 
-Estoy resolviendo desafíos de programación para mejorar mis habilidades.
-Los desafios que resuelvo están dentro del 
-<a href="https://leetcode.com/problems" title="Ir a LeetCode">
-  LeetCode
-</a>. <br />
-Cada desafío cuenta con un enlace directo a su resolución dentro del sitio.
+Como desarrollador me gusta realizar desafíos técnicos. <br /> Estos desafíos me permiten mejorar mi lógica de programación y además me gusta enfrentarme a desafíos que requieren de pensamiento crítico y creatividad.
+
+La mayoría de los desafíos que resuelvo provienen de la plataforma
+<a href="https://leetcode.com/problems" title="Ir a LeetCode">LeetCode</a>, un sitio muy completo que reúne problemas de distintas temáticas y niveles de dificultad.
+
+Cada desafío que completo lo documento dentro de este proyecto, organizándolo por nivel de dificultad (Fácil, Medio, o Difícil) y acompañándolo con un enlace directo a la solución implementada.
+
+Mi objetivo con este repositorio es compartir mi forma de resolver los distintos desafíos y dejar registro de los avances que voy logrando.
 
 ---
 
