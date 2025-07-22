@@ -1,5 +1,33 @@
-# Vue 3 + Vite
+# 🧠 Desafíos de Programación - leo-dillon
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este es un proyecto personal desarrollado con **Vue** y **Vue Router**, cuyo propósito es documentar y mostrar mis soluciones a distintos desafíos de programación, organizados por niveles de dificultad.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🏠 Página Principal
+
+La Home del sitio contiene:
+- ✍️ Una explicación clara del propósito del proyecto:
+  > *"Estoy resolviendo desafíos de programación para mejorar mis habilidades y enfrentar con eficacia los conflictos técnicos del desarrollo web."*
+- 🖼️ Una ilustración estilo anime representando a mi persona.
+- 📋 Una lista de desafíos resueltos, divididos en categorías: **Fácil**, **Medio** y **Difícil**.
+
+Cada desafío contiene:
+- 🔗 Un enlace directo para visualizar su resolución.
+- 📄 Código limpio y enfocado en la lógica del problema.
+
+## 🚀 Tecnologías utilizadas
+
+- [Vue 3](https://vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+
+## 📦 Instalación y uso
+
+Cloná el repositorio y levantá el entorno localmente:
+
+```bash
+git clone https://github.com/leo-dillon/Desafios.git
+cd Desafios
+npm install
+npm run dev
+```
