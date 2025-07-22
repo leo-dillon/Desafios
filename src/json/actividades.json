@@ -88,6 +88,13 @@
         "link": "?act=13",
         "dificultad": "facil"
     }
+    ,
+    {
+        "id": 14,
+        "nombre": "Add Binary",
+        "link": "?act=14",
+        "dificultad": "facil"
+    }
     
     
 ]

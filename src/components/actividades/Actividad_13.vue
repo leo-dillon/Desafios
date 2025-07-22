@@ -88,7 +88,7 @@
             i--
         }
         if(sobra == 1) newBinario += '1'
-    return newBinario.split('').reverse().join('')
+        return newBinario.split('').reverse().join('')
     `
 
     function testFunciones (n) {
@@ -134,7 +134,7 @@
                 </h4>
                 <Ejemplo entrada="a = '1010', b = '1011'" salida="10101" explicacion="El valor a = '1010' es 10 y el valor de b = '1011' el 11. Si sumamos dichos valores nos da 21 y debemos devolver '10101'" />
                 <h4 class="w-max text-gray-400 border-b border-stone-600">
-                    Ejemplo 2
+                    Ejemplo 3
                 </h4>
                 <p class="ml-4 pl-4 text-gray-300 border-l border-stone-600">
                     <strong class="text-gray-200 text-lg">Entrada:</strong> <br> a = '10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101' <br> b = '110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011' <br>
