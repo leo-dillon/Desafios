@@ -37,6 +37,8 @@ Home:
     alt="Foto de Leonardo Dillon"
     style="border-radius: 50%; margin-bottom: 10px;"
   />
+Este es la página de inicio al proyecto donde podrás ver los desafíos que voy realizando, en la parte de abajo podrás observar una lista de los desafíos antes mencionados.
+
 
 Ejercico Resuleto:
 <img 
@@ -44,7 +46,7 @@ Ejercico Resuleto:
     alt="Foto de Leonardo Dillon"
     style="border-radius: 50%; margin-bottom: 10px;"
   />
-  
+Cuando abres un desafío podrás ver el título, el enunciado del ejercicio, como resolví dichos desafíos y una demostración de su funcionamiento.
 ---
 
 ## 🌐 Redes
