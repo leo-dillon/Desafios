@@ -16,6 +16,7 @@ import Actividad_11 from '../actividades/Actividad_11.vue';
 import Actividad_12 from '../actividades/Actividad_12.vue';
 import Actividad_13 from '../actividades/Actividad_13.vue';
 import Actividad_14 from '../actividades/Actividad_14.vue';
+import Actividad_15 from '../actividades/Actividad_15.vue';
 
     defineProps({
         open: Boolean,
@@ -67,6 +68,9 @@ import Actividad_14 from '../actividades/Actividad_14.vue';
                 break
             case "14":
                 actividad_final = Actividad_14
+                break
+            case "15":
+                actividad_final = Actividad_15
                 break
             default:
                 actividad_final = "Error Garrafal"

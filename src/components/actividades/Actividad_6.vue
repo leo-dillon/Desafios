@@ -17,7 +17,6 @@
         let punteroNodo = nodoFinal
 
         while ( array_1 != null && array_2 != null ) {
-
             if ( array_1.val > array_2.val ){
                 punteroNodo.next = array_2
                 array_2 = array_2.next

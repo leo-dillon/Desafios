@@ -95,6 +95,13 @@
         "link": "?act=14",
         "dificultad": "facil"
     }
+    ,
+    {
+        "id": 15,
+        "nombre": "Remove Duplicates from Sorted List",
+        "link": "?act=15",
+        "dificultad": "facil"
+    }
     
     
 ]
