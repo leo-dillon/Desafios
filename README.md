@@ -21,20 +21,38 @@
 
 ## ✨ Sobre el proyecto
 
-Como desarrollador me gusta realizar desafíos técnicos. <br /> Estos desafíos me permiten mejorar mi lógica de programación y además me gusta enfrentarme a desafíos que requieren de pensamiento crítico y creatividad.
+Como desarrollador me gusta realizar desafíos técnicos. <br /> Estos desafíos me permiten mejorar mis habilidades de lógica, pensamiento critico y creatividad.
 
 La mayoría de los desafíos que resuelvo provienen de la plataforma
 <a href="https://leetcode.com/problems" title="Ir a LeetCode">LeetCode</a>, un sitio muy completo que reúne problemas de distintas temáticas y niveles de dificultad.
 
-Cada desafío que completo lo documento dentro de este proyecto, organizándolo por nivel de dificultad (Fácil, Medio, o Difícil) y acompañándolo con un enlace directo a la solución implementada.
+Cada desafío que completo lo documento dentro de este proyecto, organizándolo por nivel de dificultad (Fácil, Medio, o Difícil) y acompañándolo con un enlace directo al desafío en LeetCode.
 
 Mi objetivo con este repositorio es compartir mi forma de resolver los distintos desafíos y dejar registro de los avances que voy logrando.
+
+Home:
 
 <img 
     src="./src/assets/home.png" 
     alt="Foto de Leonardo Dillon"
     style="border-radius: 50%; margin-bottom: 10px;"
   />
+
+
+Este es la página de inicio al proyecto donde podrás ver los desafíos que voy realizando, en la parte de abajo podrás observar una lista de los desafíos antes mencionados.
+
+
+Ejercico Resuleto:
+
+<img 
+    src="./src/assets/ejResuelto.png" 
+    alt="Foto de Leonardo Dillon"
+    style="border-radius: 50%; margin-bottom: 10px;"
+  />
+
+
+Cuando abres un desafío podrás ver el título, el enunciado del ejercicio, como resolví dichos desafíos y una demostración de su funcionamiento.
+
 ---
 
 ## 🌐 Redes

@@ -83,7 +83,7 @@
         <h2 class="uppercase text-2xl text-start font-bold text-gray-200 border-b border-stone-600">
             🟢 Remove Duplicates from Sorted List
         </h2>
-        <a href="https://leetcode.com/problems/climbing-stairs/" class="ml-6 text-blue-400 hover:text-blue-500 duration-200" title="Ir a LeetCode"> link LeetCode </a>
+        <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list" class="ml-6 text-blue-400 hover:text-blue-500 duration-200" title="Ir a LeetCode"> link LeetCode </a>
         <div class="ml-6 pt-6 space-y-2">
             <h3 class="w-max text-gray-400 border-b border-stone-600">Descripción</h3>
             <p class="ml-4 text-gray-300">
