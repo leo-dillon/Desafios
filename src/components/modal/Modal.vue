@@ -6,18 +6,19 @@
     import Actividad_2 from '../actividades/Actividad_2.vue';
     import Actividad_3 from '../actividades/Actividad_3.vue';
     import Actividad_4 from '../actividades/Actividad_4.vue';
-import Actividad_5 from '../actividades/Actividad_5.vue';
-import Actividad_6 from '../actividades/Actividad_6.vue';
-import Actividad_7 from '../actividades/Actividad_7.vue';
-import Actividad_8 from '../actividades/Actividad_8.vue';
-import Actividad_9 from '../actividades/Actividad_9.vue';
-import Actividad_10 from '../actividades/Actividad_10.vue';
-import Actividad_11 from '../actividades/Actividad_11.vue';
-import Actividad_12 from '../actividades/Actividad_12.vue';
-import Actividad_13 from '../actividades/Actividad_13.vue';
-import Actividad_14 from '../actividades/Actividad_14.vue';
-import Actividad_15 from '../actividades/Actividad_15.vue';
-import Actividad_16 from '../actividades/Actividad_16.vue';
+    import Actividad_5 from '../actividades/Actividad_5.vue';
+    import Actividad_6 from '../actividades/Actividad_6.vue';
+    import Actividad_7 from '../actividades/Actividad_7.vue';
+    import Actividad_8 from '../actividades/Actividad_8.vue';
+    import Actividad_9 from '../actividades/Actividad_9.vue';
+    import Actividad_10 from '../actividades/Actividad_10.vue';
+    import Actividad_11 from '../actividades/Actividad_11.vue';
+    import Actividad_12 from '../actividades/Actividad_12.vue';
+    import Actividad_13 from '../actividades/Actividad_13.vue';
+    import Actividad_14 from '../actividades/Actividad_14.vue';
+    import Actividad_15 from '../actividades/Actividad_15.vue';
+    import Actividad_16 from '../actividades/Actividad_16.vue';
+import Actividad_17 from '../actividades/Actividad_17.vue';
 
     defineProps({
         open: Boolean,
@@ -50,8 +51,10 @@ import Actividad_16 from '../actividades/Actividad_16.vue';
                 break
             case "7":
                 actividad_final = Actividad_7
+                break
             case "8":
                 actividad_final = Actividad_8
+                break
             case "9":
                 actividad_final = Actividad_9
                 break
@@ -75,6 +78,9 @@ import Actividad_16 from '../actividades/Actividad_16.vue';
                 break
             case "16":
                 actividad_final = Actividad_16
+                break
+            case "17":
+                actividad_final = Actividad_17
                 break
             default:
                 actividad_final = "Error Garrafal"
