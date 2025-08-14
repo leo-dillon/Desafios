@@ -1,7 +1,7 @@
 <script setup>
     import { ref } from 'vue'
-    import Ejemplo from '../Ejemplo.vue'
-    import TextCode from '../codeUI/TextCode.vue'
+    import Ejemplo from '../../Ejemplo.vue'
+    import TextCode from '../../codeUI/TextCode.vue'
     
     const resp = ref("")
     const carga = ref(false)

@@ -1,11 +1,10 @@
 <script setup>
+    import { ref }          from 'vue';
+    import { useRoute }     from 'vue-router';
+    import Modal            from '../components/modal/Modal.vue';
+    import Introduction     from '../components/introduction.vue';
+    import Desafios from '../components/Desafios.vue';
 
-    import { ref } from 'vue';
-    import Introduction from '../components/introduction.vue';
-    import ListaDesafios from '../components/ListaDesafios.vue';
-    import Modal from '../components/modal/Modal.vue';
-    import { useRoute} from 'vue-router';
-    
     const modelRouter = useRoute()
     const open = ref(false)
     const loading = ref(true)
@@ -30,6 +29,6 @@
             :toggleModel="toggleModel" 
         />
         <Introduction />
-        <ListaDesafios :toggleModel="toggleModel"/>
+        <Desafios :toggleModel="toggleModel"/>
     </main>
 </template>

@@ -2,23 +2,23 @@
 
     import { useRoute } from 'vue-router';
     import Loading from './Loading.vue';
-    import Actividad_1 from '../actividades/Actividad_1.vue';
-    import Actividad_2 from '../actividades/Actividad_2.vue';
-    import Actividad_3 from '../actividades/Actividad_3.vue';
-    import Actividad_4 from '../actividades/Actividad_4.vue';
-    import Actividad_5 from '../actividades/Actividad_5.vue';
-    import Actividad_6 from '../actividades/Actividad_6.vue';
-    import Actividad_7 from '../actividades/Actividad_7.vue';
-    import Actividad_8 from '../actividades/Actividad_8.vue';
-    import Actividad_9 from '../actividades/Actividad_9.vue';
-    import Actividad_10 from '../actividades/Actividad_10.vue';
-    import Actividad_11 from '../actividades/Actividad_11.vue';
-    import Actividad_12 from '../actividades/Actividad_12.vue';
-    import Actividad_13 from '../actividades/Actividad_13.vue';
-    import Actividad_14 from '../actividades/Actividad_14.vue';
-    import Actividad_15 from '../actividades/Actividad_15.vue';
-    import Actividad_16 from '../actividades/Actividad_16.vue';
-import Actividad_17 from '../actividades/Actividad_17.vue';
+    import Actividad_1 from '../actividades/leetcode/Actividad_1.vue';
+    import Actividad_2 from '../actividades/leetcode/Actividad_2.vue';
+    import Actividad_3 from '../actividades/leetcode/Actividad_3.vue';
+    import Actividad_4 from '../actividades/leetcode/Actividad_4.vue';
+    import Actividad_5 from '../actividades/leetcode/Actividad_5.vue';
+    import Actividad_6 from '../actividades/leetcode/Actividad_6.vue';
+    import Actividad_7 from '../actividades/leetcode/Actividad_7.vue';
+    import Actividad_8 from '../actividades/leetcode/Actividad_8.vue';
+    import Actividad_9 from '../actividades/leetcode/Actividad_9.vue';
+    import Actividad_10 from '../actividades/leetcode/Actividad_10.vue';
+    import Actividad_11 from '../actividades/leetcode/Actividad_11.vue';
+    import Actividad_12 from '../actividades/leetcode/Actividad_12.vue';
+    import Actividad_13 from '../actividades/leetcode/Actividad_13.vue';
+    import Actividad_14 from '../actividades/leetcode/Actividad_14.vue';
+    import Actividad_15 from '../actividades/leetcode/Actividad_15.vue';
+    import Actividad_16 from '../actividades/leetcode/Actividad_16.vue';
+    import Actividad_17 from '../actividades/leetcode/Actividad_17.vue';
 
     defineProps({
         open: Boolean,
@@ -30,6 +30,7 @@ import Actividad_17 from '../actividades/Actividad_17.vue';
 
     const actividad = () => {
         let actividad_final 
+        console.log(modelRouter.query.act)
         switch (modelRouter.query.act) {
             case "1":
                 actividad_final = Actividad_1

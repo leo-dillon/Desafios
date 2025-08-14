@@ -1,53 +1,54 @@
 <script setup>
     import { ref } from 'vue'
-    import Ejemplo from '../Ejemplo.vue'
-    import TextCode from '../codeUI/TextCode.vue'
+    import Ejemplo from '../../Ejemplo.vue'
+    import TextCode from '../../codeUI/TextCode.vue'
     
     const resp = ref("")
     const carga = ref(false)
     
-    function function_actividad(n){
+    function function_palindrome(nums){
         setTimeout(() => {
             carga.value = false
         },500)
         document.querySelector("#res").scrollIntoView({behavior: 'smooth'})
         
-        if( n == 1 ) return 1
-        if( n == 2 ) return 2
-        let valores = new Array( n + 1 ).fill( 0 )
-        valores[1] = 1
-        valores[2] = 2
-        for (let i = 3; i <= n; i++) {
-            valores[ i ] = valores[ i - 1 ] + valores[ i - 2 ];
+        if(nums < 0) return false;
+        let numString = nums.toString()
+        let numAlreves = ""
+        for (let i = numString.length - 1; i >= 0 ; i--) {
+            numAlreves += numString[i]
         }
-        return valores[n]
-
+        return nums == numAlreves 
+        
     }
 
     let text = `
-        if( n == 1 ) return 1
-        if( n == 2 ) return 2
-        let valores = new Array( n + 1 ).fill( 0 )
-        valores[1] = 1
-        valores[2] = 2
-        for (let i = 3; i <= n; i++) {
-            valores[ i ] = valores[ i - 1 ] + valores[ i - 2 ];
+        if(nums < 0) return false;
+        let numString = nums.toString()
+        let numAlreves = ""
+        for (let i = numString.length - 1; i >= 0 ; i--) {
+            numAlreves += numString[i]
         }
-        return valores[n]
+        return nums == numAlreves 
     `
-
     function testFunciones (n) {
         carga.value = true
         switch (n) {
             case 1:
-                let n_1 = 5
-                resp.value = function_actividad(n_1)  
+                let nums_1 = 121
+                resp.value = function_palindrome(nums_1)  
                 break;
 
             case 2:
-                let n_2 = 3
-                resp.value = function_actividad(n_2)   
+                let nums_2 = -121
+                resp.value = function_palindrome(nums_2)  
                 break;
+
+            case 3:
+                let nums_3 = 10
+                resp.value = function_palindrome(nums_3)  
+                break;
+            
             default:
                 break;
         }
@@ -57,24 +58,27 @@
 <template>
     <div class="py-6 w-full h-200" id="modal">
         <h2 class="uppercase text-2xl text-start font-bold text-gray-200 border-b border-stone-600">
-            🟢 Climbing Stairs
+            🟢 Palindrome Number
         </h2>
-        <a href="https://leetcode.com/problems/climbing-stairs/" class="ml-6 text-blue-400 hover:text-blue-500 duration-200" title="Ir a LeetCode"> link LeetCode </a>
+        <a href="https://leetcode.com/problems/palindrome-number/" class="ml-6 text-blue-400 hover:text-blue-500 duration-200" title="Ir a LeetCode"> link LeetCode </a>
         <div class="ml-6 pt-6 space-y-2">
             <h3 class="w-max text-gray-400 border-b border-stone-600">Descripción</h3>
             <p class="ml-4 text-gray-300">
-                Estás subiendo una escalera. Se necesitan n escalones para llegar a la cima. <br>
-                Cada vez podés subir 1 o 2 escalones. ¿De cuántas formas distintas podés llegar hasta la cima? <br>
+                Dado un número entero x, devuelve true si x es un palíndromo y false en caso contrario.
             </p>
             <div class="py-4 space-y-3">
                 <h4 class="w-max text-gray-400 border-b border-stone-600">
                     Ejemplo 1
                 </h4>
-                <Ejemplo entrada="n = 2" salida="2" explicacion="Existen 2 formas de subir a la cima.  Subiendo 1 y 1 y subiendo 2" />
+                <Ejemplo entrada="n = 121" salida="true" explicacion="Si damos vuelta el valor es el mismo 121 = 121" />
                 <h4 class="w-max text-gray-400 border-b border-stone-600">
                     Ejemplo 2
                 </h4>
-                <Ejemplo entrada="n = 3" salida="3" explicacion="Existen 3 formas de subir a la cima.  Subiendo 1 y 1 y 1, subiendo 2 y 1, subiendo 1 y 2" />          
+                <Ejemplo entrada="n = -121" salida="false" explicacion="Todos los numeros negativos no son polindromos" />
+                <h4 class="w-max text-gray-400 border-b border-stone-600">
+                    Ejemplo 3
+                </h4>
+                <Ejemplo entrada="n = 10" salida="false" explicacion="Si damos la vuelta el valor no es igual 10 != 01" />
             </div>
             <div>
                 <h4 class="w-max text-gray-400 border-b border-stone-600">Mi respuesta</h4>
@@ -90,9 +94,12 @@
             <button @click="testFunciones(2)" class="text-gray-300 px-4 py-2 border border-gray-600 rounded-2xl cursor-pointer hover:bg-blue-800">
                 Probar valores 2
             </button>
+            <button @click="testFunciones(3)" class="text-gray-300 px-4 py-2 border border-gray-600 rounded-2xl cursor-pointer hover:bg-blue-800">
+                Probar valores 3
+            </button>
         </div>
         <div class="ml-6 pb-8" id="res">
-            <h4 v-if="resp != 'A' && carga == false" class="ml-12 text-gray-400 text-2xl"> <strong class="text-gray-300 text-lg">Respuesta:</strong> {{ resp }} </h4>
+            <h4 v-if="resp != 'a' && carga == false" class="ml-12 text-gray-400 text-2xl"> <strong class="text-gray-300 text-lg">Respuesta:</strong> {{ resp }} </h4>
             <h4 v-if="resp != '' && carga == true" class="text-gray-400"> Cargando ... </h4>
         </div>
     </div>
