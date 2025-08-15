@@ -88,7 +88,7 @@
                 </li>
                 <p v-else class="px-4 py-2 w-full text-lg text-gray-300">Cargando ...</p>
                 <li v-if="loading && actividades.length == 0" class="px-4 py-2 w-full max-full-100 flex items-center hover:bg-gray-700">
-                    <h3 class="w-full text-lg text-gray-300"> No tienes actividades en está dificultad </h3>
+                    <h3 class="w-full text-lg text-gray-300"> No tienes actividades realizadas</h3>
                 </li>
             </ul>
         </div>

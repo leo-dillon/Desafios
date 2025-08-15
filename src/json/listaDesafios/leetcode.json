@@ -2,118 +2,118 @@
     {
         "id": 1,
         "nombre": "Two Sun",
-        "link": "?act=1",
+        "link": "?act=1&name=leetcode",
         "dificultad": "facil"
     },
     {
         "id": 2,
         "nombre": "Palindrome Number",
-        "link": "?act=2",
+        "link": "?act=2&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 3,
         "nombre": "Roman to Integer",
-        "link": "?act=3",
+        "link": "?act=3&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 4,
         "nombre": "Longest Common Prefix",
-        "link": "?act=4",
+        "link": "?act=4&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 5,
         "nombre": "Valid Parentheses",
-        "link": "?act=5",
+        "link": "?act=5&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 6,
         "nombre": "Merge Two Sorted Lists",
-        "link": "?act=6",
+        "link": "?act=6&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 7,
         "nombre": "Remove Duplicates from Sorted Array",
-        "link": "?act=7",
+        "link": "?act=7&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 8,
         "nombre": "Remove Duplicates from Sorted Array",
-        "link": "?act=8",
+        "link": "?act=8&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 9,
         "nombre": "Find the Index of the First Occurrence in a String",
-        "link": "?act=9",
+        "link": "?act=9&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 10,
         "nombre": "Search Insert Position",
-        "link": "?act=10",
+        "link": "?act=10&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 11,
         "nombre": "Length of Last Word",
-        "link": "?act=11",
+        "link": "?act=11&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 12,
         "nombre": "Plus One",
-        "link": "?act=12",
+        "link": "?act=12&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 13,
         "nombre": "Add Binary",
-        "link": "?act=13",
+        "link": "?act=13&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 14,
         "nombre": "Add Binary",
-        "link": "?act=14",
+        "link": "?act=14&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 15,
         "nombre": "Remove Duplicates from Sorted List",
-        "link": "?act=15",
+        "link": "?act=15&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 16,
         "nombre": "Merge Sorted Array",
-        "link": "?act=16",
+        "link": "?act=16&name=leetcode",
         "dificultad": "facil"
     }
     ,
     {
         "id": 17,
         "nombre": "Binary Tree Inorder Traversal",
-        "link": "?act=17",
+        "link": "?act=17&name=leetcode",
         "dificultad": "facil"
     }
     
