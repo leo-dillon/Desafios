@@ -4,5 +4,11 @@
         "nombre": "¡Mi primer regalo repetido!",
         "link": "?act=1&name=adventjs2024",
         "dificultad": "facil"
+    },
+    {
+        "id": 2,
+        "nombre": "Enmarcando nombres",
+        "link": "?act=2&name=adventjs2024",
+        "dificultad": "facil"
     }
 ]

@@ -21,6 +21,7 @@
     import Actividad_leetcode_17 from '../actividades/leetcode/Actividad_17.vue';
 
     import Actividad_adventjs2024_1 from '../actividades/adventjs2024/Actividad_1.vue';
+    import Actividad_adventjs2024_2 from '../actividades/adventjs2024/Actividad_2.vue';
 
     defineProps({
         open: Boolean,
@@ -107,6 +108,9 @@
         switch (modelRouter.query.act) {
             case "1":
                 actividadBuscada = Actividad_adventjs2024_1
+                break
+            case "2":
+                actividadBuscada = Actividad_adventjs2024_2
                 break
             default:
                 actividadBuscada = "Error Garrafal"
