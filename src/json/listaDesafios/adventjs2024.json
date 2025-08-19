@@ -10,5 +10,11 @@
         "nombre": "Enmarcando nombres",
         "link": "?act=2&name=adventjs2024",
         "dificultad": "facil"
+    },
+    {
+        "id": 3,
+        "nombre": "Organiza el inventario",
+        "link": "?act=3&name=adventjs2024",
+        "dificultad": "facil"
     }
 ]

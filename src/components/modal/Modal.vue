@@ -22,6 +22,7 @@
 
     import Actividad_adventjs2024_1 from '../actividades/adventjs2024/Actividad_1.vue';
     import Actividad_adventjs2024_2 from '../actividades/adventjs2024/Actividad_2.vue';
+    import Actividad_adventjs2024_3 from '../actividades/adventjs2024/Actividad_3.vue';
 
     defineProps({
         open: Boolean,
@@ -111,6 +112,9 @@
                 break
             case "2":
                 actividadBuscada = Actividad_adventjs2024_2
+                break
+            case "3":
+                actividadBuscada = Actividad_adventjs2024_3
                 break
             default:
                 actividadBuscada = "Error Garrafal"

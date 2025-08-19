@@ -115,7 +115,7 @@ function testFunciones(n) {
         <h2 class="uppercase text-2xl text-start font-bold text-gray-200 border-b border-stone-600">
             🟢 Reto #2: 🎁 Enmarcando nombres
         </h2>
-        <a href="https://adventjs.dev/es/challenges/2024/1" class="ml-6 text-blue-400 hover:text-blue-500 duration-200"
+        <a href="https://adventjs.dev/es/challenges/2024/2" class="ml-6 text-blue-400 hover:text-blue-500 duration-200"
             title="Ir a LeetCode"> link AdventJS 2024 </a>
         <div class="ml-6 pt-6 space-y-2">
             <h3 class="w-max text-gray-400 border-b border-stone-600">Descripción</h3>
