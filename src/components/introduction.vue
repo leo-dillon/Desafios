@@ -1,17 +1,21 @@
 <script setup>
+    import { computed, ref } from 'vue';
     import Github from '../icons/Github.vue';
-import Linkendin from '../icons/Linkendin.vue';
+    import Linkendin from '../icons/Linkendin.vue';
+    
 </script>
 
 <template>
-    <section class="w-full sm:max-w-7/10 mx-auto my-12 flex flex-col items-center gap-12">
-        <div class="relative w-full max-w-130 p-6 flex flex-col gap-5 bg-white/10 sm:rounded-2xl group">
-            <div class="flex flex-col items-center justify-center ">
+    <section class="w-full sm:max-w-7/10 mx-auto my-12 flex flex-col items-center gap-12 " id="aparicion-i2">
+        <div 
+            class="relative w-full max-w-130 p-6 flex flex-col gap-5 border-2 border-stone-600 bg-white/10 sm:rounded-2xl shadow-stone-200/30 hover:shadow-2xl duration-200 "
+        >
+            <div class="flex flex-col items-center justify-center">
                 <picture class="w-full">
                     <img 
                         src="../assets/Leo.png" 
                         alt="Foto de Leonardo Dillon"
-                        class="w-42 sm:w-64 rounded-full mx-auto mb-4 bg-gray-300/30 shadow-sm shadow-gray-600 group-hover:shadow-xl duration-300"
+                        class="w-42 sm:w-64 rounded-full mx-auto mb-4 bg-gray-300/30    "
                     >
                 </picture>
                 <h2 class="text-2xl sm:text-4xl text-center font-bold text-gray-100">LEONARDO DILLON</h2>

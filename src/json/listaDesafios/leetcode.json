@@ -91,7 +91,7 @@
     ,
     {
         "id": 14,
-        "nombre": "Add Binary",
+        "nombre": "Climbing Stairs",
         "link": "?act=14&name=leetcode",
         "dificultad": "facil"
     }

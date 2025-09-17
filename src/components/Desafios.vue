@@ -11,10 +11,12 @@
     })
 
     const nameListaDesafios = ref('')
-    let actividades = ref({})
+    const filtroData = ref('')
+    const actividades = ref({})
     
     const pageDesafios = ( text ) => {
         nameListaDesafios.value = text
+        filtroData.value = ""
         buscarListaDesafio( text.toLowerCase() )
     }
 
@@ -26,6 +28,7 @@
             if( filtro ){
                 let dataFiltrada = data.filter( act => act.dificultad == filtro )
                 actividades.value = dataFiltrada
+                filtroData.value = filtro
             }else{
                 actividades.value = data
             }
@@ -34,7 +37,7 @@
 </script>
 
 <template>
-    <section>
+    <section class="w-full max-w-[1200px] mx-auto">
         <ContenedorDesafios 
             :pageDesafios="pageDesafios" 
             :buscarListaDesafio="buscarListaDesafio"
@@ -45,6 +48,7 @@
             :toggle-model="toggleModel" 
             :name-lista-desafios="nameListaDesafios" 
             :buscarListaDesafio="buscarListaDesafio"
+            :filtro="filtroData"
         />
     </section>
 </template>

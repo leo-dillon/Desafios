@@ -16,5 +16,11 @@
         "nombre": "Organiza el inventario",
         "link": "?act=3&name=adventjs2024",
         "dificultad": "facil"
+    },
+    {
+        "id": 4,
+        "nombre": "Organiza el inventario",
+        "link": "?act=4&name=adventjs2024",
+        "dificultad": "medio"
     }
 ]

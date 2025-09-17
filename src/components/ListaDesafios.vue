@@ -1,6 +1,7 @@
 <script setup>
-    import { RouterLink } from 'vue-router';
+    import { RouterLink, useRoute } from 'vue-router';
     import { onMounted, ref } from 'vue';
+    import Actividad from './Actividad.vue';
 
     defineProps({
         toggleModel: {
@@ -15,14 +16,17 @@
             type: String,
             required: true
         },
+        filtro: {
+            type: String,
+            required: true
+        },
         actividades: {
             type: Object,
             required: true
         }
     })
 
-    let loading = ref(false)
-
+    const loading = ref(false)
     onMounted( async () => {
         try {
             setTimeout(() => {
@@ -33,64 +37,76 @@
         }
     }) 
 
-    function iconoDificultad(dificultad){
-        let icon
-        switch (dificultad) {
-            case "facil":
-                icon = "🟢"
-                break;
-            case "medio":
-                icon = "🟠"
-                break
-            case "dificil":
-                icon = "🔴"
-            default:
-                icon = "⚫"
-                break;
-        }
-        return icon
-    }
-
 </script>
 
 <template>
-    <section class="w-full max-w-9/10 sm:max-w-300 mx-auto mt-12 flex flex-col">
-        <h2 class="w-full text-start font-bold text-2xl text-gray-200">
+    <section class="w-full sm:max-w-9/10 sm:mx-auto mt-12 flex flex-col">
+        <h2 class="w-full text-start ml-4 sm:ml-0 font-bold text-2xl text-gray-200">
             Lista de Desafios:
         </h2>
-        <small v-if="nameListaDesafios" class="w-full text-start text-xl text-gray-500">
+        <small v-if="nameListaDesafios" class="ml-4 sm:ml-0 mb-4 w-full text-start text-xl text-gray-500">
             Desafios resueltos de {{ nameListaDesafios }}
         </small>
         <small v-else class="w-full text-start text-xl text-gray-500">
             Selecciona una página de desafios para continuar ...
         </small>
         <div>
-            <div v-if="nameListaDesafios == 'LeetCode'" class="my-3 flex justify-start items-center gap-4">
-                <button @click="buscarListaDesafio(nameListaDesafios, 'facil')" class="px-4 text-gray-500 border border-gray-600 rounded-full cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-200"> 
+            <div v-if="actividades" class="my-3 ml-4 sm:ml-0 flex justify-start items-center flex-wrap gap-4">
+                <RouterLink 
+                    @click="buscarListaDesafio(nameListaDesafios, 'facil')" 
+                    to="?filtro=facil"
+                    :class="[ 
+                        'px-4 border border-gray-600 rounded-full cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-200'
+                        , filtro == 'facil' ? 'bg-gray-900 text-gray-300': 'text-gray-500'
+                    ]"
+                > 
                     Facíl 🟢
-                </button>
-                <button @click="buscarListaDesafio(nameListaDesafios, 'medio')" class="px-4 text-gray-500 border border-gray-600 rounded-full cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-200"> 
+                </RouterLink>
+                <RouterLink
+                    to="?filtro=medio" 
+                    @click="buscarListaDesafio(nameListaDesafios, 'medio')" 
+                    :class="[ 
+                        'px-4 border border-gray-600 rounded-full cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-200'
+                        , filtro == 'medio' ? 'bg-gray-900 text-gray-300': 'text-gray-500'
+                    ]"
+                > 
                     Intermedio 🟠
-                </button>
-                <button class="px-4 text-gray-500 border border-gray-600 rounded-full cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-200"> 
+                </RouterLink>
+                <RouterLink
+                    to="?filtro=dificil" 
+                    @click="buscarListaDesafio(nameListaDesafios, 'dificil')" 
+                    :class="[ 
+                        'px-4 border border-gray-600 rounded-full cursor-pointer hover:text-gray-300 hover:bg-gray-900 duration-200'
+                        , filtro == 'dificil' ? 'bg-gray-900 text-gray-300': 'text-gray-500'
+                    ]"
+                > 
                     Difícil 🔴
-                </button>
+                </RouterLink>
 
             </div>
-            <ul class="bg-gray-800 rounded-2xl">
-                <li v-if="loading" v-for="act in actividades" class="px-4 py-2 w-full max-full-100 flex items-center hover:bg-gray-700">
-                    <span class="mr-4 px-2 text-2xl text-gray-300 border-x border-gray-600"> {{ act.id }}</span>
-                    <h3 class="w-full text-lg text-gray-300"> {{ act.nombre }} </h3>
-                    <small v-if="actividades.dificultad" class="mx-4 px-2 text-2xl border-x border-gray-600"> 
-                        {{ iconoDificultad(act.dificultad) }}
-                    </small>
-                    <RouterLink :to="act.link" @click="toggleModel" class="min-w-max text-gray-500 hover:text-gray-300 duration-200"> Ver Solución </RouterLink>
+            <transition-group
+                tag="ul"
+                name="fade"
+                class="w-[100% - 5px] sm:max-w-400 mx-[5px] sm:mx-auto bg-gray-900 sm:rounded-2xl"
+            >
+                <li 
+                    v-if="loading"  
+                    v-for="(act, i) in actividades"
+                    class="w-full flex items-center hover:bg-gray-700 group duration-100"
+                    :style="{ transitionDelay: (i * 30) + 'ms' }"
+                >
+                    <Actividad 
+                        :act="act"
+                        :toggle-model="toggleModel"
+                    />
                 </li>
-                <p v-else class="px-4 py-2 w-full text-lg text-gray-300">Cargando ...</p>
+                <p v-else class="px-4 py-2 w-full text-lg text-gray-300">
+                    Cargando ...
+                </p>
                 <li v-if="loading && actividades.length == 0" class="px-4 py-2 w-full max-full-100 flex items-center hover:bg-gray-700">
                     <h3 class="w-full text-lg text-gray-300"> No tienes actividades realizadas</h3>
                 </li>
-            </ul>
+            </transition-group>
         </div>
     </section>
 </template>
