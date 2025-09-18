@@ -2,9 +2,9 @@
 
     import { useRoute } from 'vue-router';
     import Loading from './Loading.vue';
-    import { computed, defineAsyncComponent } from 'vue';
+    import { computed, defineAsyncComponent, onMounted } from 'vue';
 
-    defineProps({
+    const props = defineProps({
         open: Boolean,
         loading: Boolean,
         toggleModel: Function,
@@ -13,14 +13,37 @@
     const modelRouter = useRoute()
 
     const actividad = computed(() => {
+        console.log("iniciando Actividad");
         const { name, act } = modelRouter.query
         try {
+            console.log("iniciando try");
             if( !name || !act ){
                 return null
             }
-            return defineAsyncComponent( () => import(`../actividades/${name}/Actividad_${act}.vue`))
+            return defineAsyncComponent({
+                loader: () => import(`../actividades/${name}/Actividad_${act}.vue`),
+                errorComponent: {
+                    template: '<div class="text-red-500">Error loading component</div>'
+                },
+                onError(err) {
+                    console.error("Error loading component:", err);
+                    props.toggleModel(false)
+                },
+                delay: 200,
+                timeout: 3000
+            })
         } catch (error) {
+            console.error("Error loading component:", error); 
             return null
+        }
+    })
+
+    onMounted( () => {
+        console.log("onMounted Modal");
+        const { name, act } = modelRouter.query
+        if( name && act ){
+        console.log("open Modal true");
+            props.toggleModel(true)
         }
     })
 
@@ -32,6 +55,7 @@
             <Loading/>
         </div>
         <div @click.stop v-else class="relative w-full max-w-300 max-h-200 overflow-y-scroll p-4 flex flex-col justify-center bg-gray-800 rounded-2xl">
+            <p v-if="!actividad">Error</p>
             <component :is="actividad" />
             <button @click="toggleModel" class="text-xl absolute top-4 right-4 p-2 cursor-pointer hover:scale-120 duration-200">
                 ❌

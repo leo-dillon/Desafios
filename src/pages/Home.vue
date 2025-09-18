@@ -1,5 +1,5 @@
 <script setup>
-    import { ref }          from 'vue';
+    import { onMounted, ref }          from 'vue';
     import { useRoute }     from 'vue-router';
     import Modal            from '../components/modal/Modal.vue';
     import Introduction     from '../components/introduction.vue';
@@ -19,6 +19,12 @@
             loading.value = true
         }
     }
+    onMounted(() => {
+        const { name, act } = modelRouter.query
+        if( name && act ){
+            open.value = true
+        }
+    })
 </script>
 
 <template>
