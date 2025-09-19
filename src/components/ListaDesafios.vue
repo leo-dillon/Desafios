@@ -51,7 +51,7 @@
             Selecciona una página de desafios para continuar ...
         </small>
         <div>
-            <div v-if="actividades.length > 1" class="my-3 ml-4 sm:ml-0 flex justify-start items-center flex-wrap gap-4">
+            <div v-if="actividades.length > 0" class="my-3 ml-4 sm:ml-0 flex justify-start items-center flex-wrap gap-4">
                 <RouterLink 
                     @click="buscarListaDesafio(nameListaDesafios, 'facil')" 
                     to="?filtro=facil"
