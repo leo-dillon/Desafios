@@ -123,6 +123,13 @@
         "link": "?act=18&name=leetcode",
         "dificultad": "medio"
     }
+    ,
+    {
+        "id": 19,
+        "nombre": "Count Elements With Maximum Frequency",
+        "link": "?act=19&name=leetcode",
+        "dificultad": "facil"
+    }
     
     
 ]
