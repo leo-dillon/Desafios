@@ -13,10 +13,8 @@
     const modelRouter = useRoute()
 
     const actividad = computed(() => {
-        console.log("iniciando Actividad");
         const { name, act } = modelRouter.query
         try {
-            console.log("iniciando try");
             if( !name || !act ){
                 return null
             }
@@ -33,16 +31,13 @@
                 timeout: 3000
             })
         } catch (error) {
-            console.error("Error loading component:", error); 
             return null
         }
     })
 
     onMounted( () => {
-        console.log("onMounted Modal");
         const { name, act } = modelRouter.query
         if( name && act ){
-        console.log("open Modal true");
             props.toggleModel(true)
         }
     })
