@@ -137,6 +137,13 @@
         "link": "?act=20&name=leetcode",
         "dificultad": "medio"
     }
+    ,
+    {
+        "id": 21,
+        "nombre": "Triangle",
+        "link": "?act=21&name=leetcode",
+        "dificultad": "medio"
+    }
     
     
 ]
