@@ -30,4 +30,11 @@
         "link": "?act=5&name=adventjs2024",
         "dificultad": "facil"
     }
+    ,
+    {
+        "id": 6,
+        "nombre": " ¿Regalo dentro de la caja?",
+        "link": "?act=6&name=adventjs2024",
+        "dificultad": "medio"
+    }
 ]
