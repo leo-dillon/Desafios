@@ -37,4 +37,18 @@
         "link": "?act=6&name=adventjs2024",
         "dificultad": "medio"
     }
+    ,
+    {
+        "id": 7,
+        "nombre": "El ataque del Grinch",
+        "link": "?act=7&name=adventjs2024",
+        "dificultad": "medio"
+    }
+    ,
+    {
+        "id": 8,
+        "nombre": "La carrera de renos",
+        "link": "?act=8&name=adventjs2024",
+        "dificultad": "facil"
+    }
 ]

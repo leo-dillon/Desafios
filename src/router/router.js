@@ -9,7 +9,7 @@ const routes = [
         component: Home
     },
     {
-        path: "/*",
+        path: "/:patchMatch(.*)*",
         name: "Desafios - Error",
         component: Error
     }

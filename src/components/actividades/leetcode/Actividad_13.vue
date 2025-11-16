@@ -2,6 +2,7 @@
     import { ref } from 'vue'
     import Ejemplo from '../../Ejemplo.vue'
     import TextCode from '../../codeUI/TextCode.vue'
+import Desafio from '../../modal/Desafio/Desafio.vue'
     
     const resp = ref("")
     const carga = ref(false)
@@ -111,57 +112,46 @@
                 break;
         }
     }
+
+    const datosAct = {
+        id: '13',
+        plataforma: "LeetCode",
+        dificultad: "🟢",
+        title: "Add Binary",
+        link: "https://leetcode.com/problems/add-binary/",
+        description: [ 
+            "Tenemos dos valores en binario 'a' y 'b', sumar esos valores y devolver el resultante en binario. "
+        ],
+        ejemplo: [
+            {
+                id: "1",
+                entrada: " a = '11', b = '1'",
+                salida: "100",
+                explicacion:"El valor a = '11' es 3 y el valor de b = '1' el 1. Si sumamos dichos valores nos da 4 y debemos devolver '100'" 
+            },
+            {
+                id: "2",
+                entrada: "a = '1010', b = '1011'",
+                salida: "10101",
+                explicacion:"El valor a = '1010' es 10 y el valor de b = '1011' el 11. Si sumamos dichos valores nos da 21 y debemos devolver '10101'" 
+            }
+            
+        ]
+    }
 </script>
 
 <template>
-    <div class="py-6 w-full h-200" id="modal">
-        <h2 class="uppercase text-2xl text-start font-bold text-gray-200 border-b border-stone-600">
-            🟢 Add Binary
-        </h2>
-        <a href="https://leetcode.com/problems/add-binary/" class="ml-6 text-blue-400 hover:text-blue-500 duration-200" title="Ir a LeetCode"> link LeetCode </a>
-        <div class="ml-6 pt-6 space-y-2">
-            <h3 class="w-max text-gray-400 border-b border-stone-600">Descripción</h3>
-            <p class="ml-4 text-gray-300">
-                Tenemos dos valores en binario "a" y "b", sumar esos valores y devolver el resultante en binario. <br>
-            </p>
-            <div class="py-4 space-y-3">
-                <h4 class="w-max text-gray-400 border-b border-stone-600">
-                    Ejemplo 1
-                </h4>
-                <Ejemplo entrada=" a = '11', b = '1'" salida="100" explicacion="El valor a = '11' es 3 y el valor de b = '1' el 1. Si sumamos dichos valores nos da 4 y debemos devolver '100'" />
-                <h4 class="w-max text-gray-400 border-b border-stone-600">
-                    Ejemplo 2
-                </h4>
-                <Ejemplo entrada="a = '1010', b = '1011'" salida="10101" explicacion="El valor a = '1010' es 10 y el valor de b = '1011' el 11. Si sumamos dichos valores nos da 21 y debemos devolver '10101'" />
-                <h4 class="w-max text-gray-400 border-b border-stone-600">
-                    Ejemplo 3
-                </h4>
-                <p class="ml-4 pl-4 text-gray-300 border-l border-stone-600">
-                    <strong class="text-gray-200 text-lg">Entrada:</strong> <br> a = '10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101' <br> b = '110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011' <br>
-                    <strong class="text-gray-200 text-lg">Salida:</strong> '110111101100010011000101110110100000011101000101011001000011011000001100011110011010010011000000000' <br>
-                    </p>          
-            </div>
-            <div>
-                <h4 class="w-max text-gray-400 border-b border-stone-600">Mi respuesta</h4>
-                <div class="w-max mt-2 ml-4 bg-[#1e1e1e] border-l border-stone-600 text-gray-200 text-sm font-mono pr-10">
-                    <TextCode :text="text" />
-                </div>
-            </div>
-        </div>
-        <div class="ml-6 py-6 flex gap-6 ">
-            <button @click="testFunciones(1)" class="text-gray-300 px-4 py-2 border border-gray-600 rounded-2xl cursor-pointer hover:bg-blue-800">
-                Probar valores
-            </button>
-            <button @click="testFunciones(2)" class="text-gray-300 px-4 py-2 border border-gray-600 rounded-2xl cursor-pointer hover:bg-blue-800">
-                Probar valores 2
-            </button>
-            <button @click="testFunciones(3)" class="text-gray-300 px-4 py-2 border border-gray-600 rounded-2xl cursor-pointer hover:bg-blue-800">
-                Probar valores 3
-            </button>
-        </div>
-        <div class="ml-6 pb-8" id="res">
-            <h4 v-if="resp != 'A' && carga == false" class="ml-12 text-gray-400 text-2xl"> <strong class="text-gray-300 text-lg">Respuesta:</strong> {{ resp }} </h4>
-            <h4 v-if="resp != '' && carga == true" class="text-gray-400"> Cargando ... </h4>
-        </div>
-    </div>
+    <Desafio
+        :id="datosAct.id"
+        :description="datosAct.description"
+        :ejemplo="datosAct.ejemplo"
+        :plataforma="datosAct.plataforma"
+        :dificultad="datosAct.dificultad"
+        :title="datosAct.title"
+        :link="datosAct.link"
+        :text="text"
+        :ejecutarTest="testFunciones"
+        :resp="resp"
+        :carga="carga"
+    />
 </template>

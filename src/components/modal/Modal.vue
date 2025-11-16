@@ -46,15 +46,22 @@
 
 <template>
     <div @click="toggleModel" v-if="open" class="fixed flex justify-center items-center top-0 w-screen h-screen bg-black/50 z-100">
-        <div @click.stop v-if="loading"  class=" w-max max-w-9/10 p-4 flex flex-col items-center justify-center bg-orange-200 rounded-2xl">
+        <div @click.stop v-if="loading"  class="p-4 flex flex-col items-center justify-center bg-orange-200 rounded-2xl">
             <Loading/>
         </div>
-        <div @click.stop v-else class="relative w-full max-w-300 max-h-200 overflow-y-scroll p-4 flex flex-col justify-center bg-gray-800 rounded-2xl">
+        <div @click.stop v-else class="relative w-fit overflow-y-scroll p-4 sm:mx-4 flex flex-col justify-center bg-zinc-800 rounded-2xl" id="scroll">
             <p v-if="!actividad">Error</p>
             <component :is="actividad" />
-            <button @click="toggleModel" class="text-xl absolute top-4 right-4 p-2 cursor-pointer hover:scale-120 duration-200">
+            <button @click="toggleModel" class="flex items-center text-md absolute top-0 sm:top-4 right-0 sm:right-4 p-2 cursor-pointer hover:scale-120 duration-200 ">
                 ❌
             </button>
         </div>
     </div>
 </template>
+
+<style scoped>
+#scroll {
+  scrollbar-color: #4a5565 transparent;
+  scrollbar-width: thin;
+}
+</style>

@@ -35,6 +35,6 @@ import { ref } from 'vue';
 <template>
     {{ mejorandoTexto(text) }}
     <pre>
-        <code v-html="textoMejorado" class="text-lg"></code>
+        <code v-html="textoMejorado" class="text-start sm:text-auto text-sm w-full"></code>
     </pre>
 </template>

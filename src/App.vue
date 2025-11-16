@@ -6,7 +6,9 @@
 
 <template>
   <Header />
-  <RouterView />
+  <div class="flex-grow">
+    <RouterView />
+  </div>
   <Footer />
 </template>
 
