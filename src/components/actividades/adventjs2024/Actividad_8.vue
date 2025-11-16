@@ -87,12 +87,12 @@ const datosAct = {
         title: "🦌 La carrera de renos",
         link: "https://adventjs.dev/es/challenges/2024/8",
         description: [ 
-            "En este desafio debemos representar de forma grafica como termino una carrera de renos, para ello nos entregan 2 valores",
+            "En este desafío debemos representar de forma gráfica como termino una carrera de renos, para ello nos entregan 2 valores",
             "-- posicion = number[] y tamañoPista = number",
-            "Tomando encuenta los valores anteriores debemos generar una pista de carreras donde se verá la posición final de los renos",
-            "Datos a tener encuenta:",
-            "-- Las posiciones pueden ser positivas y negativas. Si son positivas contamos desda la salida y si son negativas contamos desde la llegada. Tambien la posición puede ser 0. Este caso es el ganador de la carrera por lo tanto no se encuentra en la pista",
-            "-- Cada pista debe tener su respecitvo espacio lateral: Ej 1° línea = 0 espacios, 2° línea = 1 espacios, 3° línea = 2 espacios "
+            "Tomando encuentá los valores anteriores debemos generar una pista de carreras donde se verá la posición final de los renos",
+            "Datos a tener encuentá:",
+            "-- Las posiciones pueden ser positivas y negativas. Si son positivas contamos desde la salida y si son negativas contamos desde la llegada. También la posición puede ser 0. Este caso es el ganador de la carrera por lo tanto no se encuentra en la pista",
+            "-- Cada pista debe tener su respectivo espacio lateral: Ej 1° línea = 0 espacios, 2° línea = 1 espacios, 3° línea = 2 espacios "
         ],
         ejemplo: [
             {
