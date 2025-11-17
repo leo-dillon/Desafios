@@ -52,45 +52,53 @@ import Desafio from '../../modal/Desafio/Desafio.vue'
         return newBinario.split('').reverse().join('')
     }
 
-    let text = `
-        let newBinario = ''
-        let sobra = 0
-        let i = ( a.length > b.length ) ? a.length - 1 : b.length - 1
-        let array_a = a.split('')
-        let array_b = b.split('')
-        
-        while ( ( array_b != [] || array_a != [] ) && i >= 0 ) {
-            let val_b = array_b.pop()
-            let val_a = array_a.pop()
-            if( val_a == undefined ){ val_a = 0 } else { val_a = parseInt( val_a ) }
-            if( val_b == undefined ){ val_b = 0 } else { val_b = parseInt( val_b ) }
-            let val = ( val_a + val_b + sobra )
+let text = `
+let newBinario = ''
+let sobra = 0
+let i = ( a.length > b.length ) ? a.length - 1 : b.length - 1
+let array_a = a.split('')
+let array_b = b.split('')
 
-            switch (val) {
-                case 3:
-                    newBinario += '1'
-                    sobra = 1
-                    break;
-                case 2:
-                    newBinario += '0'
-                    sobra = 1
-                    break;
-                case 1:
-                    newBinario += '1'
-                    sobra = 0
-                    break;
-                case 0:
-                    newBinario += '0'
-                    sobra = 0
-                    break;
-                default:
-                    break;
-            }
-            i--
-        }
-        if(sobra == 1) newBinario += '1'
-        return newBinario.split('').reverse().join('')
-    `
+while ( ( array_b != [] || array_a != [] ) && i >= 0 ) {
+    let val_b = array_b.pop()
+    let val_a = array_a.pop()
+    if( val_a == undefined ){ 
+        val_a = 0 
+    } else { 
+        val_a = parseInt( val_a ) 
+    }
+    if( val_b == undefined ){ 
+        val_b = 0 
+    } else { 
+        val_b = parseInt( val_b ) 
+    }
+    let val = ( val_a + val_b + sobra )
+
+    switch (val) {
+        case 3:
+            newBinario += '1'
+            sobra = 1
+            break;
+        case 2:
+            newBinario += '0'
+            sobra = 1
+            break;
+        case 1:
+            newBinario += '1'
+            sobra = 0
+            break;
+        case 0:
+            newBinario += '0'
+            sobra = 0
+            break;
+        default:
+            break;
+    }
+    i--
+}
+if(sobra == 1) newBinario += '1'
+return newBinario.split('').reverse().join('')
+`
 
     function testFunciones (n) {
         carga.value = true
@@ -103,10 +111,6 @@ import Desafio from '../../modal/Desafio/Desafio.vue'
             case 2:
                 let a_2 = "1010", b_2 = "1011"
                 resp.value = function_actividad(a_2, b_2)   
-                break;
-            case 3:
-                let a_3 = "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101", b_3 = "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
-                resp.value = function_actividad(a_3, b_3)   
                 break;
             default:
                 break;

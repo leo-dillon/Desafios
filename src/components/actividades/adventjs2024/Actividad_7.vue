@@ -35,27 +35,27 @@ function function_twoSum( packages ) {
 }
 
 let text = `
-    let limite = 0
-    if( packages.length == 0) return ""
-    if( packages.includes('(') ){
-      while (limite < 10) {
-        let ultimoParentesis = packages.lastIndexOf('(')
-        if( ultimoParentesis == -1 ) {
-          limite = 10 
-        }
-        let cierreParentesis = packages.indexOf(')', ultimoParentesis )
-        let porcionString = packages
-          .slice( ultimoParentesis, cierreParentesis + 1 )
-        let textPorcionString = porcionString
-          .slice( 1, porcionString.length - 1 )
-          .split('')
-          .reverse()
-          .join('')
-        packages = packages.replace(porcionString, textPorcionString)
-        limite++
-      }
+let limite = 0
+if( packages.length == 0) return ""
+if( packages.includes('(') ){
+    while (limite < 10) {
+    let ultimoParentesis = packages.lastIndexOf('(')
+    if( ultimoParentesis == -1 ) {
+        limite = 10 
     }
-    return packages
+    let cierreParentesis = packages.indexOf(')', ultimoParentesis )
+    let porcionString = packages
+        .slice( ultimoParentesis, cierreParentesis + 1 )
+    let textPorcionString = porcionString
+        .slice( 1, porcionString.length - 1 )
+        .split('')
+        .reverse()
+        .join('')
+    packages = packages.replace(porcionString, textPorcionString)
+    limite++
+    }
+}
+return packages
     `
 
 function testFunciones(n) {
@@ -93,10 +93,10 @@ const datosAct = {
         description: [ 
             "¡El grinch 👹 ha pasado por el taller de Santa Claus! Y menudo desastre ha montado. Ha cambiado el orden de algunos paquetes, por lo que los envíos no se pueden realizar.",
             "Por suerte, el elfo Pheralb ha detectado el patrón que ha seguido el grinch para desordenarlos. Nos ha escrito las reglas que debemos seguir para reordenar los paquetes. Las instrucciones que siguen son:",
-            "Recibirás un string que contiene letras y paréntesis.",
-            "Cada vez que encuentres un par de paréntesis, debes voltear el contenido dentro de ellos.",
-            "Si hay paréntesis anidados, resuelve primero los más internos.",
-            "Devuelve el string resultante con los paréntesis eliminados, pero con el contenido volteado correctamente.",
+            "-- Recibirás un string que contiene letras y paréntesis.",
+            "-- Cada vez que encuentres un par de paréntesis, debes voltear el contenido dentro de ellos.",
+            "-- Si hay paréntesis anidados, resuelve primero los más internos.",
+            "-- Devuelve el string resultante con los paréntesis eliminados, pero con el contenido volteado correctamente.",
         ],
         ejemplo: [
             {

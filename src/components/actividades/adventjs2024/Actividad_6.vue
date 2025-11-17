@@ -30,21 +30,21 @@ function function_twoSum( box ) {
 }
 
 let text = `
-    let response = true
-    let esta = false
-    box.pop()
-    box.shift()
-    box.forEach(item => {
+let response = true
+let esta = false
+box.pop()
+box.shift()
+box.forEach(item => {
 
-        if(item[0] == '*' || item[ item.length - 1 ] == '*'){
-            response = false
-        }
-        if( item.includes('*') ) {
-            esta = true
-        }
-    });
-    if( !esta ) response = false
-    return response
+    if(item[0] == '*' || item[ item.length - 1 ] == '*'){
+        response = false
+    }
+    if( item.includes('*') ) {
+        esta = true
+    }
+});
+if( !esta ) response = false
+return response
     `
 
 function testFunciones(n) {

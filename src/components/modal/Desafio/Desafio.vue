@@ -58,7 +58,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex flex-col h-200 py-6 " id="modal">
+    <div class="flex flex-col h-210 py-6 " id="modal">
         <DesafiosTitle 
             :id="id"
             :plataforma="plataforma"
@@ -66,19 +66,28 @@ defineProps({
             :title="title"
             :link="link"
         />
-        <div class="flex flex-col sm:flex-row gap-12 ">
+        <div class="flex flex-col xl:flex-row gap-6">
             <DesafiosDescripcion 
                 :description="description"
                 :ejemplo="ejemplo"
+                :ejecutarTest="ejecutarTest"
             />
-            <div class="w-full max-w-[600px] pr-12">
-                <DesafioCode :text="text"/>
-                <DesafioTest :ejecutarTest="ejecutarTest" :ejemplo="ejemplo"/>
-                <div class="ml-6 pb-8 w-full" id="res">
-                    <h4 v-if="carga == true" class="text-gray-400"> Cargando ... </h4>
-                    <h4 v-else-if="resp && carga == false" class="w-full max-w-9/10 text-wrap text-gray-400 text-sm"> 
-                        <strong class="text-gray-300 text-md ">Respuesta:</strong> <br> {{ resp }}
-                    </h4>
+            <div class="flex flex-col gap-4  w-full pb-4 xl:max-w-[600px] xl:pr-12">
+                <div class="order-2 sm:order-1">
+                    <DesafioCode :text="text"/>
+                </div>
+                <div class="w-full scroll-top order-1 sm:order-2" id="res">
+                    <div v-if="carga" class="text-gray-400 text-sm animate-pulse">Cargando...</div>
+    
+                    <div
+                        v-else-if="resp"
+                        class="bg-primary-900/40 border border-primary-700 text-gray-200 p-3 rounded-xl shadow-md max-w-xl"
+                    >
+                        <span class="block font-semibold text-primary-300 mb-1">Respuesta del ejemplo seleccionado: </span>
+                        <p class="whitespace-pre-line leading-relaxed">
+                            <pre><code>{{ resp }}</code></pre>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

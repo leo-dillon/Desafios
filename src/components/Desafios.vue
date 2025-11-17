@@ -47,7 +47,7 @@
         <div class="my-6 sm:my-12 w-full text-center"
             v-if="nameListaDesafios == ''">
             <h2 class="text-sm sm:text-xl text-gray-600">
-                Debes seleccionar una plataforma para listar los desafíos. 
+                Selecciona una plataforma para listar los desafíos. 
             </h2>
         </div>
         <ListaDesafios 

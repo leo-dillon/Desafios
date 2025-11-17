@@ -1,15 +1,16 @@
 <template>
-    <header class="w-full min-h-20 sm:px-12 flex items-center justify-center bg-stone-900 opacity-90">
-        <div class=" flex gap-8 items-center" id="aparicion-i">
+    <header class="w-full h-12 px-4 sm:px-12 flex items-end ">
+        <a href="https://portafolio-henna-phi.vercel.app/" target="_blank" id="aparicion-i" title="Ver portafolio de Leonardo Dillon"
+            class="flex gap-1 items-center hover:scale-x-110 transition-all duration-200"
+        >
             <picture>
                 <img
-                    class=" min-w-8 h-8" 
+                    class="w-4" 
                     src="../assets/whiteLogo.png" 
                     alt="Logo de Leonardo Dillon" 
-                    title="Logo de Leonardo Dillon"
                 >
             </picture>
-            <h1 class="text-2xl text-white font-bold " title="Leonardo Dillon">LDillon</h1>
-        </div>
+            <h1 class="text-xl text-white font-bold ">LDillon</h1>
+        </a>
     </header>
 </template>

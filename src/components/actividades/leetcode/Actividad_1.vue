@@ -12,7 +12,7 @@ import Desafio from '../../modal/Desafio/Desafio.vue'
         setTimeout(() => {
             carga.value = false
         },500)
-        document.querySelector("#res").scrollIntoView({behavior: 'smooth'})
+        document.getElementById("res")?.scrollIntoView({behavior: 'smooth'})
 
         for( let i = 0; i < nums.length; i++ ){
             for (let u = i+1; u < nums.length; u++) {
@@ -25,14 +25,14 @@ import Desafio from '../../modal/Desafio/Desafio.vue'
     }
 
 let text = `
-    for( let i = 0; i < nums.length; i++ ){
-        for (let u = i+1; u < nums.length; u++) {
-            if( nums[i] + nums[u] == target ){
-                posicionesHalladas = [ i, u ]
-                return posicionesHalladas
-            }
-        }   
-    }
+for( let i = 0; i < nums.length; i++ ){
+    for (let u = i+1; u < nums.length; u++) {
+        if( nums[i] + nums[u] == target ){
+            posicionesHalladas = [ i, u ]
+            return posicionesHalladas
+        }
+    }   
+}
 `
 
     function testFunciones (n) {

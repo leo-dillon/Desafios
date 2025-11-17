@@ -1,5 +1,8 @@
 @import 'tailwindcss'; 
 
+small,strong,p,h1,h2,h3,h4,h5,a,pre,code{
+  font-family: "Roboto";
+}
 html{
   scroll-behavior: smooth;
 }

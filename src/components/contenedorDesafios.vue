@@ -5,9 +5,11 @@
             required: true
         }
     })
+
     import Leetcode from '../icons/Leetcode.vue';
     import MiduDev from '../icons/MiduDev.vue';
     import MoureDev from '../icons/MoureDev.vue';
+
 </script>
 
 <template>

@@ -9,14 +9,14 @@
 <template>
     <section class="w-full max-w-9/10 sm:max-w-7/10 mx-auto my-12 flex flex-col items-center gap-12" id="aparicion-i2">
         <div 
-            class="relative w-full max-w-130 p-6 flex flex-col gap-5 border-2 border-stone-600 bg-white/10 rounded-2xl shadow-stone-200/30 hover:shadow-2xl duration-200 "
+            class="relative w-full max-w-130 p-6 flex flex-col gap-5 border-2 border-stone-600 bg-white/10 rounded-2xl shadow-stone-400 shadow-sm sm:shadow-2xl hover:shadow-sm duration-200 group"
         >
             <div class="flex flex-col items-center justify-center">
                 <picture class="w-full">
                     <img 
                         src="../assets/Leo.png" 
                         alt="Foto de Leonardo Dillon"
-                        class="w-42 sm:w-64 rounded-full mx-auto mb-4 bg-gray-300/30    "
+                        class="w-42 sm:w-64 rounded-full mx-auto mb-4 bg-gray-300/30 group-hover:scale-105 group-hover:border-1 border-white duration-100"
                     >
                 </picture>
                 <h2 class="text-2xl sm:text-4xl text-center font-bold text-gray-100">LEONARDO DILLON</h2>
@@ -25,7 +25,8 @@
             <div class="py-4 space-y-2 text-center border-y border-white">
                 <h3 class="text-lg sm:text-2xl font-semibold text-gray-300 italic">Resolviendo desafíos de programación</h3>
                 <p class=" sm:text-lg text-gray-400 leading-relaxed max-w-prose ">
-                Estoy resolviendo desafíos de programación para mejorar mis habilidades y enfrentar con eficacia los conflictos técnicos del desarrollo web. 
+                    Estoy resolviendo desafíos de programación para mejorar mis habilidades de resolución de problemas <br>
+                    <small class="opacity-30 group-hover:opacity-50 sm:opacity-50 sm:group-hover:opacity-70"> ( ⭐ También porque me es divertido ⭐) </small>
                 </p>
             </div>
             <div class="absolute -top-2 left-4 flex flex-col sm:flex-row justify-center gap-3 mt-4">

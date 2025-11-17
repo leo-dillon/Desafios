@@ -42,7 +42,7 @@
 
 <template>
     <section class="w-full sm:max-w-9/10 sm:mx-auto mt-12 flex flex-col scroll-top" id="Desafios">
-        <div class="w-full max-w-9/10 mx-auto">
+        <div class="w-full max-w-9/10 mx-auto sm:mx-0">
             <h2 class="w-full text-start font-bold text-2xl text-gray-200">
                 Lista de Desafios:
             </h2>
