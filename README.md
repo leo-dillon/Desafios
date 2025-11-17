@@ -33,19 +33,27 @@ Mi objetivo con este repositorio es compartir mi forma de resolver los distintos
 Home:
 
 <img 
-    src="./src/assets/home.png" 
+    src="./public/home.png" 
     alt="Foto de Leonardo Dillon"
     style="border-radius: 50%; margin-bottom: 10px;"
   />
 
 
-Este es la página de inicio al proyecto donde podrás ver los desafíos que voy realizando, en la parte de abajo podrás observar una lista de los desafíos antes mencionados.
+Está es la presentación del proyecto donde me presento y muestros mir Redes
 
+<img 
+    src="./public/listaDesafios.png" 
+    alt="listas Desafíos"
+    style="border-radius: 50%; margin-bottom: 10px;"
+  />
+
+
+Dentro de sección "Lista de Desafíos" podrás ver todos los desafíos que he resuelto hasta el momento"
 
 Ejercico Resuleto:
 
 <img 
-    src="./src/assets/ejResuelto.png" 
+    src="./public/desafioresuelto.png" 
     alt="Foto de Leonardo Dillon"
     style="border-radius: 50%; margin-bottom: 10px;"
   />
