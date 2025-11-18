@@ -25,6 +25,7 @@ Como desarrollador me gusta realizar desafíos técnicos. <br /> Estos desafíos
 
 La mayoría de los desafíos que resuelvo provienen de la plataforma
 <a href="https://leetcode.com/problems" title="Ir a LeetCode">LeetCode</a>, un sitio muy completo que reúne problemas de distintas temáticas y niveles de dificultad.
+También estoy realizando desafíos de otras páginas como por ejemplo <a href="https://adventjs.dev/es" title="Ir a AdventJS">AdventJS</a>, <a href="https://www.halloween.dev/es/retos/2025 " title="Ir a Halloween.dev"> Halloween.dev </a>
 
 Cada desafío que completo lo documento dentro de este proyecto, organizándolo por nivel de dificultad (Fácil, Medio, o Difícil) y acompañándolo con un enlace directo al desafío en LeetCode.
 
